@@ -10,8 +10,10 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote')->hourly();
 
 
+/*
 Schedule::call(function () {
     Log::info('everyMinute',['everyMinute']);
 })->everyMinute();
 
 Schedule::command('app:test-command')->everyMinute();
+*/
