@@ -9,7 +9,7 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote')->hourly();
 
-
+/*
 
 Schedule::call(function () {
     dispatch(new \App\Jobs\ProcessPodcast());
@@ -17,6 +17,6 @@ Schedule::call(function () {
 
     //Log::info('everyMinute',['everyMinute']);
 })->everyMinute();
-/*
+
 Schedule::command('app:test-command')->everyMinute();
 */
