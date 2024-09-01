@@ -16,7 +16,7 @@ Schedule::call(function () {
 
 
     //Log::info('everyMinute',['everyMinute']);
-})->everySecond();
+})->everyMinute();
 /*
 Schedule::command('app:test-command')->everyMinute();
 */
