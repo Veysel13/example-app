@@ -10,10 +10,13 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote')->hourly();
 
 
-/*
-Schedule::call(function () {
-    Log::info('everyMinute',['everyMinute']);
-})->everyMinute();
 
+Schedule::call(function () {
+    dispatch(new \App\Jobs\ProcessPodcast());
+
+
+    //Log::info('everyMinute',['everyMinute']);
+})->everySecond();
+/*
 Schedule::command('app:test-command')->everyMinute();
 */
