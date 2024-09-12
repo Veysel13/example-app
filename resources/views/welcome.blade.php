@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel Veysel 3</title>
+        <title>Laravel Veysel 4</title>
 
 
         <!-- Fonts -->
