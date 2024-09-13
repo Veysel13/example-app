@@ -8,8 +8,8 @@ permissions:
   - object: /var/www/html
     pattern: '**'
     mode: '0755'
-    owner: root
-    group: root
+    owner: ec2-user
+    group: ec2-user
     type:
       - file
       - directory
