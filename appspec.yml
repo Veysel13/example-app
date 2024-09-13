@@ -1,5 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
+  - source: dist/MyAngularProject
+    destination: /var/www/MyAngularProject
+permissions:
+  - object: /var/www/MyAngularProject
+    pattern: '**'
+    mode: '0755'
+    owner: root
+    group: root
+    type:
+      - file
+      - directory
