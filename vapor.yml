@@ -1,0 +1,18 @@
+id: 34613
+name: EasyEvents
+environments:
+    production:
+        memory: 512
+        cli-memory: 512
+        timeout: 180
+        queue-timeout: 300
+        runtime: 'php-8.1:al2'
+        database: 'easyevents'
+        scheduler: true
+        queues:
+            - operation
+            - emailing
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+          # - 'npm ci && npm run build && rm -rf node_modules'
